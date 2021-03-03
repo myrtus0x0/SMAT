@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"context"
-	"io/ioutil"
+	"net/http"
 	"os"
 	"strings"
 	"time"
@@ -32,13 +32,17 @@ var UploadCmd = &cobra.Command{
 
 		tags := strings.Split(bazaarTags, ",")
 
+		httpCli := http.Client{
+			Timeout: time.Second * 15,
+		}
+
 		for _, file := range args {
-			contents, err := ioutil.ReadFile(file)
+			f, err := os.Open(file)
 			if err != nil {
 				log.Fatal(err)
 			}
 
-			resp, err := malwarebazaar.UploadFile(ctx, "", contents, false, tags, deliveryMethod, os.Getenv("BAZA_KEY"))
+			resp, err := malwarebazaar.UploadFile(ctx, httpCli, "", f, false, tags, deliveryMethod, os.Getenv("BAZA_KEY"))
 			if err != nil {
 				log.Fatal(err)
 			}
