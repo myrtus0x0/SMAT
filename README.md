@@ -27,6 +27,19 @@
 
 ### ThreatFox
 - [X] pull all C2s over the last seven days
+
+## Setup
+All the routing and auth is controlled via environment variables. To use all of the platforms, the following environment varialbes will have to be set
+```
+export TRIAGE_KEY=""
+export BAZA_KEY=""
+export URLHAUS=""
+export MWDB_KEY=""
+export MWDB_HOST="mwdb.cert.pl"
+export MWDB_PROTO="<https://><http://>"
+```
+
+## Examples
 ```
 SMAT allows for anaylysts to quickly extract information about malware families, download samples, upload samples, download pcaps and extract config details from common malware families.
 
@@ -46,6 +59,24 @@ Flags:
 
 Use "smat [command] --help" for more information about a command.
 
+```
+
+```
+all subcommands relating to the malware bazaar platform
+
+Usage:
+  smat bazaar [command]
+
+Available Commands:
+  check       checks if a sample exists within malware bazaar
+  get_family  returns metadata for all samples uploaded for a family within the last 24 hours
+  upload      uploads a sample or samples to malware bazaar
+
+Flags:
+  -h, --help          help for bazaar
+  -t, --tags string   comma split list of tags to apply
+
+Use "smat bazaar [command] --help" for more information about a command.
 ```
 
 ```
