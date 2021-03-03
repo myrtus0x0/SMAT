@@ -184,6 +184,8 @@ github.com/subosito/gotenv v1.2.0/go.mod h1:N0PQaV/YGNqwC0u51sEeR/aUtSLEXKX9iv69
 github.com/tmc/grpc-websocket-proxy v0.0.0-20190109142713-0ad062ec5ee5/go.mod h1:ncp9v5uamzpCO7NfCPTXjqaC+bZgJeR0sMTm6dMHP7U=
 github.com/vertoforce/go-malwarebazaar v0.0.0-20201014181121-1986d41230b5 h1:6oYv28PtRBaERyn1GEhF8n0sjCu1cqEofkijr7JZZXg=
 github.com/vertoforce/go-malwarebazaar v0.0.0-20201014181121-1986d41230b5/go.mod h1:Wi7ofyGh2IvKIGJw77eLg0lvTndaPrznBGOBRb5a0Go=
+github.com/vertoforce/go-malwarebazaar v0.0.0-20210303212213-801dbe78dc75 h1:scieL/hhhPNpyAJD/XYngWwyTIG2r7zflMqGaaB0TjA=
+github.com/vertoforce/go-malwarebazaar v0.0.0-20210303212213-801dbe78dc75/go.mod h1:Wi7ofyGh2IvKIGJw77eLg0lvTndaPrznBGOBRb5a0Go=
 github.com/vertoforce/gourlhaus v0.0.0-20201228182632-61363d1f8ecb h1:DVcehcZ34WHkyRmSnkkq1wC0wxaNK+TohzBt7szYX3s=
 github.com/vertoforce/gourlhaus v0.0.0-20201228182632-61363d1f8ecb/go.mod h1:qDeQQgIOLEmy0T7Gf+dD3+GTZt+ENc7l6xkxRws3bUM=
 github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2/go.mod h1:UETIi67q53MR2AWcXfiuqkDkRtnGDLqkBTpCHuJHxtU=

@@ -9,7 +9,7 @@ require (
 	github.com/myrtus0x0/gomwdb v0.0.0-20210303021626-0d0b46d89cd3
 	github.com/sirupsen/logrus v1.8.0
 	github.com/spf13/cobra v1.1.3
-	github.com/vertoforce/go-malwarebazaar v0.0.0-20201014181121-1986d41230b5
+	github.com/vertoforce/go-malwarebazaar v0.0.0-20210303212213-801dbe78dc75
 	github.com/vertoforce/gourlhaus v0.0.0-20201228182632-61363d1f8ecb
 	golang.org/x/crypto v0.0.0-20210220033148-5ea612d1eb83 // indirect
 	golang.org/x/net v0.0.0-20210226172049-e18ecbb05110 // indirect
