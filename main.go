@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.nike.com/cyber-threat-intelligence/smat/cmd"
+	"github.com/myrtus0x0/SMAT/cmd"
 )
 
 func main() {
