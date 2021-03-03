@@ -1,16 +1,25 @@
 # S.M.A.T
 
+*Superior malware analysis toolkit*
+
 ## Capabilities
 
+### MWDB
+- [X] query for config entries of samples
+- [ ] file upload
+- [ ] file download
+- [ ] config upload
+
 ### Triage
-- [X] Get all JA3s and JA3 for a family
-- [X] Get config details for a sample
+- [X] get all JA3s and JA3 for a family
+- [X] get config details for a sample
 - [X] get pcaps from a malware family (meant to use in conjunction with PCAP processing tools)
 - [X] submit samples to the Tria.ge platform
 
 ### Malware Bazaar
 - [X] check if samples exist in the respository
 - [X] get medata for all samples in a family over the last 24 hours
+- [X] upload samples to the platform
 
 ### URLHaus
 - [X] upload URLs to the platform
@@ -28,6 +37,7 @@ Available Commands:
   bazaar      all subcommands relating to the malware bazaar platform
   fox         all subcommands relating to the threatfox platform
   help        Help about any command
+  mwdb        all subcommands relating to CERT.PLs MWDB platform
   triage      all subcommands relating to the triage platform
   urlhaus     all subcommands relating to the urlhaus platform
 
@@ -35,6 +45,7 @@ Flags:
   -h, --help   help for smat
 
 Use "smat [command] --help" for more information about a command.
+
 ```
 
 ```
@@ -70,4 +81,4 @@ Flags:
   -h, --help   help for urlhaus
 
 Use "smat urlhaus [command] --help" for more information about a command.
-```# SMAT
+```
