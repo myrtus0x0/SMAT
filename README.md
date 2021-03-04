@@ -4,6 +4,11 @@
 
 ## Capabilities
 
+### Unpac.me
+- [ ] sample submission
+- [ ] download results
+- [ ] check if already submitted
+
 ### MWDB
 - [X] query for config entries of samples
 - [ ] file upload
