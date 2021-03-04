@@ -1,5 +1,7 @@
 # S.M.A.T
 
+*Standardized Malware Analysis Toolkit*
+
 ## Capabilities
 
 ### MWDB
