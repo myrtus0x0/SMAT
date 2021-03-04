@@ -1,6 +1,6 @@
 # S.M.A.T
 
-*Superior malware analysis toolkit*
+*Standardized Malware Analysis Toolkit*
 
 ## Capabilities
 
