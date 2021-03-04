@@ -25,7 +25,15 @@ func init() {
 var UploadCmd = &cobra.Command{
 	Use:   "upload",
 	Short: "uploads a sample or samples to malware bazaar",
-	Long:  `uploads a sample or samples to malware bazaar. This call requires an API key and will be read from an env variable with the name BAZA_KEY`,
+	Long: `uploads a sample or samples to malware bazaar. This call requires an API key and will be read from an env variable with the name BAZA_KEY.
+Format:
+	
+	smat bazaar upload malware_sample...
+
+Example usage:
+
+	smat bazaar upload malware_sample1 -t emotet,doc,epoch2 -n email_attachment
+	smat bazaar upload malware_sample1 malware_sample2 -t emotet,doc,epoch2 -n email_attachment`,
 	Run: func(cmd *cobra.Command, args []string) {
 		ctx, cancel := context.WithTimeout(context.Background(), time.Second*10)
 		defer cancel()

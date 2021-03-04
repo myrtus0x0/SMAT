@@ -18,7 +18,16 @@ func init() {
 var urlhausCheckCmd = &cobra.Command{
 	Use:   "check",
 	Short: "checks if a url or set of urls exists within urlhaus",
-	Long:  `checks if a url or set of urls exists within urlhaus`,
+	Long: `When dealing with incidents that require sensitvity, this command allows you to check if a URL already exists in urlhaus but will not upload it to the dataset.
+Can be beneficial for initial investigations.
+Format:
+	
+	smat urlhaus check more_files_with_urls..
+
+Example usage:
+
+	smat urlhaus check /tmp/buer.txt 
+	smat urlhaus check /tmp/buer.txt /tmp/qakbot.txt`,
 	Run: func(cmd *cobra.Command, args []string) {
 		ctx, cancel := context.WithTimeout(context.Background(), time.Second*10)
 		defer cancel()

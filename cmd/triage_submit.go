@@ -30,7 +30,21 @@ var whitelistedSites = map[string]bool{
 var submitCmd = &cobra.Command{
 	Use:   "submit",
 	Short: "submits a file to the Hatching triage platform",
-	Long:  `submits a file to the Hatching triage platform`,
+	Long: `submit will upload a sample/samples to the Tria.ge platform and print out results for the uploads.
+Information that can be printed is listed below:
+	* Malware family
+	* Network traffic details
+	* Process information
+	* Dumped payloads
+
+Format:
+	
+	smat triage submit malware_samples...
+
+Example usage:
+
+	smat triage submit malware_sample1 
+	smat triage submit malware_sample1 malware_sample2`,
 	Run: func(cmd *cobra.Command, args []string) {
 		client := triage.NewClientWithRootURL(os.Getenv("TRIAGE_KEY"), triageAPI)
 

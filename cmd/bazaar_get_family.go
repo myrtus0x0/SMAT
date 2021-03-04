@@ -23,7 +23,16 @@ func init() {
 var getFamilyCmd = &cobra.Command{
 	Use:   "get_family",
 	Short: "returns metadata for all samples uploaded for a family within the last 24 hours",
-	Long:  `returns metadata for all samples uploaded for a family within the last 24 hours`,
+	Long: `Will print a log message for each malware sample in a specific family, showing the hash, the filename, delivery method and filesize. 
+By default this call will only return a max of 50 samples. All samples can be downloaded via the download flag
+Format:
+	
+	smat bazaar get_family malware_family...
+
+Example usage:
+
+	smat bazaar get_family qakbot 
+	smat bazaar get_family qakbot -d`,
 	Run: func(cmd *cobra.Command, args []string) {
 		limit := 50
 

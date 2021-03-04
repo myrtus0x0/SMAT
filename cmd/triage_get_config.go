@@ -20,7 +20,15 @@ func init() {
 var getConfigCmd = &cobra.Command{
 	Use:   "get_config",
 	Short: "returns all config details for the malware if it exists",
-	Long:  `returns all config details for the malware if it exists`,
+	Long: `Will take the last 500 samples submitted for a malware family and will print out the configuration details. 
+Format:
+	
+	smat triage get_config malware_family_names...
+
+Example usage:
+
+	smat triage get_config qakbot
+	smat triage get_config qakbot emotet`,
 	Run: func(cmd *cobra.Command, args []string) {
 		client := triage.NewClientWithRootURL(os.Getenv("TRIAGE_KEY"), triageAPI)
 		for _, family := range args {

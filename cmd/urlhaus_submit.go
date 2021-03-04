@@ -26,7 +26,17 @@ func init() {
 var urlhausSubmitCmd = &cobra.Command{
 	Use:   "submit",
 	Short: "uploads the list of URLs to urlhaus",
-	Long:  `uploads the list of URLs to urlhaus`,
+	Long: `submit takes in a list of filenames and will read each line in the file and attempt to submit the URLs to urlhaus. 
+The tags passed are going to be applied to each URL across all files, so best to upload similarly categorized URLs together.
+Format:
+	
+	smat urlhaus submit more_files_with_urls.. [--tag]
+
+Example usage:
+
+	smat urlhaus submit /tmp/buer.txt --tags buer
+	smat urlhaus submit /tmp/buer.txt /tmp/qakbot.txt --tags malware
+	`,
 	Run: func(cmd *cobra.Command, args []string) {
 		if csvTags == "" {
 			log.Fatal("tags are required")

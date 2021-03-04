@@ -22,7 +22,16 @@ func init() {
 var getPcapsCmd = &cobra.Command{
 	Use:   "get_pcaps",
 	Short: "returns all pcap ng files for a specific family",
-	Long:  `returns all pcap ng files for a specific family`,
+	Long: `Triage unlike other platforms embeds the SSL key from a HTTPS session into the PCAP and makes that PCAP available for download.
+This allows you to inspect normally encrypted traffic. When analyzing samples in bulk having a overview of the various network calls being made can be invaluable.
+Format:
+	
+	smat triage get_pcaps malware_family_names...
+
+Example usage:
+
+	smat triage get_pcaps qakbot
+	smat triage submit qakbot emotet`,
 	Run: func(cmd *cobra.Command, args []string) {
 		client := triage.NewClientWithRootURL(os.Getenv("TRIAGE_KEY"), triageAPI)
 		for _, family := range args {

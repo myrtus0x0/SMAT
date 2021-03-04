@@ -16,7 +16,15 @@ func init() {
 var checkCmd = &cobra.Command{
 	Use:   "check",
 	Short: "checks if a sample exists within malware bazaar",
-	Long:  `checks if a sample exists within malware bazaar`,
+	Long: `Same functionality provided as the urlhaus_check command. Will tell you if the sample is already in the malware bazaar dataset.
+Format:
+	
+	smat bazaar check malware_samples...
+
+Example usage:
+
+	smat bazaar check qakbot_sample_1
+	smat bazaar check qakbot_sample_1 emotet_sample_1`,
 	Run: func(cmd *cobra.Command, args []string) {
 		ctx, cancel := context.WithTimeout(context.Background(), time.Second*10)
 		defer cancel()
