@@ -1,7 +1,5 @@
 # S.M.A.T
 
-*Superior malware analysis toolkit*
-
 ## Capabilities
 
 ### MWDB
