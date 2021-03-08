@@ -16,7 +16,7 @@ func init() {
 }
 
 const (
-	threatFoxAPI = "https://threatfox-api/api/v1/"
+	threatFoxAPI = "https://threatfox-api.abuse.ch/api/v1/"
 )
 
 type getC2SReq struct {
