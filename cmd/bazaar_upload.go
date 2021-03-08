@@ -24,8 +24,8 @@ func init() {
 
 var UploadCmd = &cobra.Command{
 	Use:   "upload",
-	Short: "uploads a sample or samples to malware bazaar",
-	Long: `uploads a sample or samples to malware bazaar. This call requires an API key and will be read from an env variable with the name BAZA_KEY.
+	Short: "uploads a sample or samples to MalwareBazaar",
+	Long: `uploads a sample or samples to MalwareBazaar. This call requires an API key and will be read from an env variable with the name BAZA_KEY.
 Format:
 	
 	smat bazaar upload malware_sample...

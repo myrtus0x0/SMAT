@@ -10,6 +10,6 @@ func init() {
 
 var bazaarCmd = &cobra.Command{
 	Use:   "bazaar",
-	Short: "all subcommands relating to the malware bazaar platform",
-	Long:  `all subcommands relating to the malware bazaar platform`,
+	Short: "all subcommands relating to the MalwareBazaar platform",
+	Long:  `all subcommands relating to the MalwareBazaar platform`,
 }
