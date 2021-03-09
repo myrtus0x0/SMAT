@@ -34,7 +34,9 @@
 - [X] pull all C2s over the last seven days
 
 ## Setup
-All the routing and auth is controlled via environment variables. To use all of the platforms, the following environment varialbes will have to be set
+All the routing and auth is controlled via environment variables. To use all of the platforms, the following environment varialbes will have to be set.
+
+### On Linux / Unix:
 ```
 export TRIAGE_KEY=""
 export BAZA_KEY=""
@@ -42,6 +44,16 @@ export URLHAUS=""
 export MWDB_KEY=""
 export MWDB_HOST="mwdb.cert.pl"
 export MWDB_PROTO="<https://><http://>"
+```
+
+### On Windows (through a Powershell console):
+```powershell
+$env:TRIAGE_KEY = ""
+$env:BAZA_KEY = ""
+$env:URLHAUS = ""
+$env:MWDB_KEY = ""
+$env:MWDB_HOST = "mwdb.cert.pl"
+$env:MWDB_PROTO = "<https://><http://>"
 ```
 
 ## Examples
