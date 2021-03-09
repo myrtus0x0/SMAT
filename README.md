@@ -34,8 +34,10 @@
 - [X] pull all C2s over the last seven days
 
 ## Setup
-All the routing and auth is controlled via environment variables. To use all of the platforms, the following environment varialbes will have to be set
-```
+All the routing and auth is controlled via environment variables. To use all of the platforms, the following environment variables will have to be set.
+
+### On Linux / Unix:
+```shell
 export TRIAGE_KEY=""
 export BAZA_KEY=""
 export URLHAUS=""
@@ -44,9 +46,20 @@ export MWDB_HOST="mwdb.cert.pl"
 export MWDB_PROTO="<https://><http://>"
 ```
 
-## Examples
+### On Windows (through a Powershell console):
+```powershell
+$env:TRIAGE_KEY = ""
+$env:BAZA_KEY = ""
+$env:URLHAUS = ""
+$env:MWDB_KEY = ""
+$env:MWDB_HOST = "mwdb.cert.pl"
+$env:MWDB_PROTO = "<https://><http://>"
 ```
-SMAT allows for anaylysts to quickly extract information about malware families, download samples, upload samples, download pcaps and extract config details from common malware families.
+
+## Examples
+### Global help
+```
+SMAT allows for analysts to quickly extract information about malware families, download samples, upload samples, download pcaps and extract config details from common malware families.
 
 Usage:
   smat [command]
@@ -65,7 +78,7 @@ Flags:
 Use "smat [command] --help" for more information about a command.
 
 ```
-
+### Malware Bazaar
 ```
 all subcommands relating to the malware bazaar platform
 
@@ -83,7 +96,7 @@ Flags:
 
 Use "smat bazaar [command] --help" for more information about a command.
 ```
-
+### Hatching Tria.ge
 ```
 all subcommands relating to the triage platform
 
@@ -102,7 +115,7 @@ Flags:
 Use "smat triage [command] --help" for more information about a command.
 
 ```
-
+### Abuse.ch URLhaus
 ```
 all subcommands relating to the urlhaus platform
 
