@@ -58,7 +58,7 @@ $env:MWDB_PROTO = "<https://><http://>"
 
 ## Examples
 ### Global help
-```shell
+```
 SMAT allows for analysts to quickly extract information about malware families, download samples, upload samples, download pcaps and extract config details from common malware families.
 
 Usage:
@@ -79,7 +79,7 @@ Use "smat [command] --help" for more information about a command.
 
 ```
 ### Malware Bazaar
-```shell
+```
 all subcommands relating to the malware bazaar platform
 
 Usage:
@@ -97,7 +97,7 @@ Flags:
 Use "smat bazaar [command] --help" for more information about a command.
 ```
 ### Hatching Tria.ge
-```shell
+```
 all subcommands relating to the triage platform
 
 Usage:
