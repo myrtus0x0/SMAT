@@ -34,7 +34,7 @@
 - [X] pull all C2s over the last seven days
 
 ## Setup
-All the routing and auth is controlled via environment variables. To use all of the platforms, the following environment varialbes will have to be set.
+All the routing and auth is controlled via environment variables. To use all of the platforms, the following environment variables will have to be set.
 
 ### On Linux / Unix:
 ```shell
